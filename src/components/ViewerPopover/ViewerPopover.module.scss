@@ -1,0 +1,78 @@
+
+.container {
+  position: absolute;
+  height: 150px;
+  width: 204px;
+  top: 47px;
+  right: 84px;
+  background: #fff;
+  z-index: 10;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBox {
+  display: flex;
+  height: 74px;
+  justify-content: flex-start;
+  padding: 9px 16px 10px;
+  box-sizing: border-box;
+}
+
+.avatarWrap {
+  width: 48px;
+  height: 45.5px;
+  font-size: 20px;
+}
+
+.rightBox {
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  margin: 0 13px 0;
+}
+.name {
+  color: #000;
+  margin: 0;
+}
+
+.email {
+  color: #979797;
+  margin: 0;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.profile {
+ color: #349A89;
+ margin: 0;
+ text-decoration: none;
+}
+
+.profileLink {
+color: #349A89;
+padding: 9px 16px 15px;
+text-decoration: none;
+font-family: inherit;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 1px;
+text-transform: uppercase;
+border-bottom: 1px solid #E4E4E4;
+}
+
+.logoutBtn{
+  background: none;
+  cursor: pointer;
+  padding: 10px 10px 11px;
+  margin: 4px 6px ;
+  border: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: inherit;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #349A89;
+  text-align: left;
+}

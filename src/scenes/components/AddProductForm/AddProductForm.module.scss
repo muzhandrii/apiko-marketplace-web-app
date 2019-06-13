@@ -1,0 +1,124 @@
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+.container {
+  max-width: 664px;
+  height: auto;
+
+}
+
+.title {
+  font-size: 22px;
+  margin: 0 0 24px;
+  color: #282828;
+  text-align: center;
+}
+
+.btnWrap {
+  padding: 8px 0 0;
+  width: 377px;
+  margin: 0 auto;
+}
+
+.label {
+  height: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #303030;
+  margin: 0 0 4px;
+}
+
+.fileInputWrap {
+  background: #F9FAFB;
+  border: 1px solid #DEDEE0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 0 0 24px;
+  height: 124px;
+  position: relative;
+  display: flex;
+}
+
+.fileInput {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.fileUploadButton {
+  display: inline-block;
+  height: 92px;
+  width: 92px;
+  box-sizing: border-box;
+  background: #E4E4E4;
+  border-radius: 4px;
+  position: relative;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 38px;
+    border-radius: 4px;
+    background: #349A89;
+    left: 27px;
+    top: calc(50% - 2px);
+    z-index: 1;
+  }
+
+  &::before {
+    @extend .fileUploadButton::after;
+    transform: rotate(90deg);
+  }
+}
+
+.thumb {
+  display: inline-block;
+  display: block;
+  height: 92px;
+  width: 80px;
+  box-sizing: border-box;
+  padding: 4px;
+  margin: 0 0 0 5px;
+}
+
+.fileLoader {
+  font-size: 42px;
+  line-height: 92px;
+  display: block;
+  width: 100%;
+  height: 92px;
+  background: #E4E4E4;
+  text-align: left;
+  padding: 0 0 0 50px;
+  color: #349A89;
+}

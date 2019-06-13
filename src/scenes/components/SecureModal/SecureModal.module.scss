@@ -1,0 +1,38 @@
+.container {
+    height: 230px;
+    width: 330px;
+    padding: 22px 22px 30px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 8% auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.buttonsWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttonWrap {
+  width: 45%;
+}
+
+.modalTitle {
+  font-size: 20px;
+  color: #444343;
+  margin: 20px 0 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: #282828;
+  display: block;
+  width:  100%;
+  margin: 0 0 0 23px;
+}

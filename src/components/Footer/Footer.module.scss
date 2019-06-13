@@ -1,0 +1,33 @@
+.footer {
+  background: #c0c4ce20;
+  position: relative;
+  font-size: 14.5px;
+  line-height: 17px;
+  color: #C0C4CE;
+
+  &::after {
+    content: "";
+    display: block;
+    background: rgba(#979797, .2);
+    position: absolute;
+    top: 0;
+    height: 2.5px;
+    width: 57.5%;
+    left: 50%;
+    transform: translateX(-49.6%);
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 260px;
+  padding: 20px 8px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}

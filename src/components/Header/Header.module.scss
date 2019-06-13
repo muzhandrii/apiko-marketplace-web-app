@@ -1,0 +1,53 @@
+.header {
+  padding: 16px 0 14px;
+  background: linear-gradient(180deg, #090810 0%, #171236 100%);
+}
+
+.container {
+  max-width: 1174px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.childrenContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 855px;
+  width: 100%;
+  margin: 0 31.5px;
+  box-sizing: border-box;
+  padding: 8px 0 0;
+}
+
+.rightContainer {
+  padding: 8px 25px 0 0;
+  width: 118px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+}
+
+.authLink {
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: inherit;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.avatarWrap {
+  margin: -5px 0 0;
+  width: 40px;
+  height: 38px;
+}

@@ -1,0 +1,23 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background:maroon;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.avatar {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.initials {
+  margin: 0 0 -2px;
+}

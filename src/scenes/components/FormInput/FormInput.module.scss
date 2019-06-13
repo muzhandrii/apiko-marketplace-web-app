@@ -1,0 +1,83 @@
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.error {
+  margin: -10px 6px 4px;
+  color: red;
+  font-size: 13px;
+}
+
+.label {
+  height: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #303030;
+  margin: 0 0 4px;
+}
+
+.input {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  color: #303030;
+  display: block;
+  width: 100%;
+  height: 58px;
+  background: #F9FAFB;
+  border: 1px solid #DEDEE0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: inherit;
+
+  @include placeholder {
+    color: #66666677;
+  }
+
+  &:focus {
+    @include placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+
+.textarea {
+  @extend .input;
+  height: 183px;
+  resize: none;
+}
+
+.authInput {
+  padding: 19px 45px 21px 13px;
+  margin: 3px 0 14px;
+}
+
+.addProductInput {
+  padding: 19px 79px 23px 21px;
+  margin: 3px 0 24px;
+}
