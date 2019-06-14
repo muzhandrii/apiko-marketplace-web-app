@@ -95,7 +95,7 @@ export function saveProduct(product) {
     };
     const newProduct = normalize(savedProduct, schemas.Product);
     try {
-      console.log(newProduct);
+      
       dispatch(actions.saveProduct.start(newProduct));
 
       await Api.Products.saveProduct(newProduct.result);
