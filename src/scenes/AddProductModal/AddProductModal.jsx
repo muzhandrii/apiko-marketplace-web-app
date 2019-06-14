@@ -15,7 +15,6 @@ function AddProductModal({ history }) {
       id="modal"
       className={s.modalContainer}
       onClick={closeModal}
-      role="modal"
     >
       <div className={s.container}>
         <AddProductForm />

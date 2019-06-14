@@ -14,7 +14,7 @@ export function fetchViewer() {
 
       dispatch(actions.fetchViewer.success({ viewer, entities }));
     } catch (err) {
-      dispatch(actions.fetchViewer.error({ message: err.message }));
+      dispatch(actions.fetchViewer.error(err));
     }
   };
 }
