@@ -19,7 +19,7 @@ export default function Profile({ viewer }) {
             fullName: [fullName],
             phone: [phone],
           }}
-          onSubmit={(body) => {}}
+          onSubmit={() => {}}
         >
           {() => (
             <Form className={s.form}>
@@ -31,10 +31,6 @@ export default function Profile({ viewer }) {
                   Upgrade Photo
                   <input
                     type="file"
-                    // onChange={async (event) => {
-                    //   const imageUrl = await handleImageLoader(event);
-                    //   setFieldValue('photos', values.photos.concat(imageUrl));
-                    // }}
                     id="photos"
                     accept="image/*"
                     className={s.fileInput}

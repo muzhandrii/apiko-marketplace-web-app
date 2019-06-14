@@ -122,7 +122,7 @@ function Product({
         <Button primaryClass="favorite-btn" onClick={saveHandler} type="button">
           <>
             <div className={s.heartIcon}>
-                {product.saved ? (
+              {product.saved ? (
                 <HeartIcon width="17" height="15" color="#349A89" painted />
               ) : (
                 <HeartIcon width="17" height="15" color="#535353" />

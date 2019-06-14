@@ -5,6 +5,7 @@ import ContactSellerModal from './ContactSellerModalView';
 import { routes } from '../router';
 import { messagesOperations } from '../../modules/messages';
 import { chatsOperations } from '../../modules/chats';
+import { viewerSelectors } from '../../modules/viewer';
 
 const mapDispatchToProps = {
   createChat: chatsOperations.createChat,
@@ -15,6 +16,7 @@ function mapStateToProps(state) {
   return {
     isLoading: state.messages.sendMessage.isLoading,
     chat: state.chats.items,
+    viewer: viewerSelectors.getViewer(state),
   };
 }
 
@@ -37,9 +39,13 @@ const enhancer = compose(
       sendMessage,
       history,
       owner,
+      viewer,
     }) => async (event) => {
       text = text.trim();
       event.preventDefault();
+      if (viewer.id === owner.id) {
+        return false;
+      }
       if (!product.chatId) {
         const data = await createChat(product.id, text);
         sendMessage(data.result, text);

@@ -28,12 +28,10 @@ function SecureModal({ closeModal }) {
 
 SecureModal.propTypes = {
   closeModal: T.func,
-  productId: T.string,
 };
 
 SecureModal.defaultProps = {
   closeModal: () => {},
-  productId: '',
 };
 
 export default SecureModal;

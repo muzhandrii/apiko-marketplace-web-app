@@ -1,25 +1,18 @@
-import { compose, withState, withHandlers } from 'recompose';
+import { compose } from 'recompose';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Profile from './ProfileView';
-import { viewerActions, viewerSelectors } from '../../modules/viewer';
-import Api from '../../api';
+import { viewerSelectors } from '../../modules/viewer';
 
 function mapStateToProps(state) {
   return {
     viewer: viewerSelectors.getViewer(state),
   };
 }
-// TODO: finish
-// const mapDispatchToProps = {
-// };
 
 const enhancer = compose(
   withRouter,
-  connect(
-    mapStateToProps,
-    // mapDispatchToProps,
-  ),
+  connect(mapStateToProps),
 );
 
 export default enhancer(Profile);
